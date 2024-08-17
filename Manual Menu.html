@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Support Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="new-logo.png" alt="Company Logo" class="logo">
+
+
+        <!-- REPLACE CUSTOMER NAME, MODEL, AND SERIAL -->
+            <h1>Welcome, Oncor Electric</h1>
+            <p>Model: Ba-VPM-1xWV1200-1xNC0300-B</p>
+            <p>Serial: 24072996</p>
+
+
+        </header>
+        <nav>
+            <button id="manualButton">Operating Manual</button>
+            <button id="contactButton">Contact Us</button>
+            <button id="venderButton">Vendor Literature</button>
+            <button id="websiteButton">Website</button>
+            <button id="exitButton">Exit</button>
+        </nav>
+        <!-- Vendor Literature Dropdown -->
+        <div id="venderLiteratureSection" style="display: none;">
+            <label for="literatureSelect">Select a Component Manual:</label>
+            <select id="literatureSelect">
+                <option value="" disabled selected>Select a manual</option>
+
+
+        <!-- REPLACE VENDOR LIT PDF NAME, GIVE NAME FOR DROP DOWN MENU, AND ADD OR REMOVE AS MANY AS YOU NEED -->
+                <option value="Vendor Lit/Instruction Manual COBRA NC 0100-0300 B ACV_EN_en.pdf">Vacuum Pump</option>
+                <option value="Vendor Lit/Instruction Manual PANDA WV 1200-2400 A_PT_pt.pdf">Vacuum Booster</option>
+                <option value="Vendor Lit/Rolair Compressor Manual.pdf">Rolair Compressor</option>
+                <option value="Vendor Lit/Vaisala DMP7 Probe Manual.pdf">Vaisala Probe</option>
+                <option value="Vendor Lit/Vaisala Indigo520 Manual.pdf">Vaisala</option>
+                <option value="Vendor Lit/VGC-301 Vacuum Gauge.pdf">Vacuum Gauge</option>
+
+
+
+            </select>
+            <button id="openLiteratureButton">Open Manual</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
